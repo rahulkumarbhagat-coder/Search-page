@@ -1,0 +1,92 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #A59D84;
+  color: #333;
+}
+
+.app {
+  margin: 0 auto;
+  padding: 20px;
+  background: #A59D84;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  z-index: -1;
+}
+
+.search-box {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #C1BAA1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.filter-btn {
+  padding: 10px 12px;
+  flex-basis: 0;
+  border: none;
+  border-radius: 4px;
+  background: #D7D3BF;
+  color: black;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: #ECEBDE;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.result-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #ECEBDE;
+}
+
+.result-item h3 {
+  margin: 0 0 10px;
+}
+
+.result-item .category {
+  display: inline-block;
+  padding: 2px 6px;
+  background: #A59D84;
+  color: black;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-top: 10px;
+}
