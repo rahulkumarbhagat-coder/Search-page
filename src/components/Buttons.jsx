@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 
 const Buttons = ({ selectedCategory, setSelectedCategory }) => {
 
@@ -12,7 +12,7 @@ const Buttons = ({ selectedCategory, setSelectedCategory }) => {
         transition: { duration: 1, type: "spring", stiffness: 50,staggerChildren:0.2 },
       }
   }
-  const categories = ["All", "React", "JavaScript", "CSS"];
+  const categories = ["All", "React", "Node.js", "JavaScript", "TypeScript", "CSS"];
 
   return (
     <motion.div
